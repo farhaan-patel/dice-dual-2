@@ -151,7 +151,7 @@ html {
   border: none;
   border-radius: 20px;
   margin: auto;
-  background-color: var(--grey);
+  background-color: white;
   transition: linear 200ms;
 }
 .dumb:hover{
