@@ -86,9 +86,7 @@ btnHold.addEventListener("click", function () {
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.remove("player--active");
-      document.getElementById(`name--${activePlayer}`).textContent = `player ${
-        activePlayer === 0 ? 1 : 2
-      } wines the match🎉🎊🥳 `;
+      document.getElementById(`name--${activePlayer}`).textContent = `Winner🎉🎊🥳 `;
       playing = false;
       //     scoreP0El.textContent = 0;
       // scoreP1El.textContent = 0;
