@@ -10,6 +10,7 @@ const current0El = document.getElementById("current--0");
 const current1El = document.getElementById("current--1");
 const player0El = document.querySelector(".player--0");
 const player1El = document.querySelector(".player--1");
+const btnclose = document.querySelector(".ri-close-line");
 const btn = document.querySelector(".dumb");
 let score = [0, 0];
 let currentScore = 0;
@@ -86,7 +87,9 @@ btnHold.addEventListener("click", function () {
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.remove("player--active");
-      document.getElementById(`name--${activePlayer}`).textContent = `Winner🎉🎊🥳 `;
+      document.getElementById(`name--${activePlayer}`).textContent = `player ${
+        activePlayer === 0 ? 1 : 2
+      } wines the match🎉🎊🥳 `;
       playing = false;
       //     scoreP0El.textContent = 0;
       // scoreP1El.textContent = 0;
@@ -98,6 +101,7 @@ btnHold.addEventListener("click", function () {
     }
   }
 });
+// new game
 btnNew.addEventListener("click", function () {
   startingCondition();
 
@@ -109,4 +113,8 @@ btnNew.addEventListener("click", function () {
     .querySelector(`.player--${activePlayer}`)
     .classList.add("player--active");
   nameSelector();
+});
+// close btn
+btnclose.addEventListener("click", function () {
+  document.querySelector(".name-selector").classList.add("hidden");
 });
