@@ -80,15 +80,7 @@ body{
   
 }
 /* name selector */
-.name-selector{
-  border-radius: 50px;
-  width: 300px;
-  height: 300px;
-background-color: var(--btn-clr);
-font: var(--font);
-align-items: center;
-text-align: center;
-}
+
 .font{
   font-family: var(--font2);
   font-size: 16px;
@@ -140,18 +132,14 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-.form-input{
-  padding: 10px 20px;
-  margin-bottom: 10px;
-  border-radius: 20px;
-}
+
 .dumb{
   padding: 10px 20px;
-  background-color: var(--badge-bg-color);
+  /* background-color: var(--badge-bg-color); */
   border: none;
   border-radius: 20px;
   margin: auto;
-  background-color: white;
+  background-color: var(--white);
   transition: linear 200ms;
 }
 .dumb:hover{
@@ -170,6 +158,7 @@ body {
 }
 
 /* LAYOUT */
+
 main {
   position: relative;
   margin-top: 50px;
@@ -185,7 +174,30 @@ main {
   
   display: flex;
 }
-
+.name-selector{
+  border-radius: 50px;
+  max-width: 300px;
+  height: 300px;
+background-color: var(--btn-clr);
+font: var(--font);
+align-items: center;
+text-align: center;
+top: 25%;
+left: 35%;
+}
+.ri-close-line{
+  font-size: 30px;
+  top: 10px;
+  right: 30px;
+}
+.postion{
+  margin-top: 20px;
+}
+.form-input{
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
 .player {
   flex: 50%;
   padding: 9rem;
@@ -319,6 +331,7 @@ main {
 .hidden{
   display: none;
 }
+
 @media only screen and (max-width: 768px) {
   body{
     font-family: 'Nunito', sans-serif;
