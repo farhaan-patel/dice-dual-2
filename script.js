@@ -1,5 +1,5 @@
 "use strict";
-alert("*Dice Duel:*
+alert(`*Dice Duel:*
 - *Objective:* Be the first to score 100 points.
 - *Roll or Hold:*
   - Roll a die; score accumulates unless a 1 is rolled.
@@ -9,7 +9,7 @@ alert("*Dice Duel:*
 - *Features:*
   - Players can enter their names.
   - Dynamic display of scores and active player.
-  - Victory message when a player reaches 100 points.");
+  - Victory message when a player reaches 100 points.`);
 const scoreP0El = document.getElementById("score--0");
 const scoreP1El = document.getElementById("score--1");
 const diceEl = document.querySelector(".dice");
